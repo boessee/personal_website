@@ -1,17 +1,50 @@
 html {
-    background-color: blue;
-    background-image: url(./pictures/fatpige.jpg);
+    background-color: darkgreen;
+    background-image: url(./pictures/tree1.jpg);
 }
 
 .hero {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.emoji-hover {
+    position: relative;
+}
+
+.emoji-hover:hover::after {
+    content: attr(data-emoji);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emoji-hover:hover {
+    color: transparent;
+}
+
+/* Keep your existing nav styles */
+nav {
+    background-color: darkgreen;
+    padding: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+}
+
+
 .cable-car {
-    /* transform: rotate(2deg);  */
     border-top: 1px solid black;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .content {
@@ -24,21 +57,21 @@ html {
 .friedrich {
     height: 300px;
     width: 300px;
-    
 }
 
 nav {
-    background-color: #333;
+    background-color: darkgreen;
     padding: 1rem;
 }
 
 nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
 }
 
-nav a:hover {
-    background-color: #555;
-}
+/* Remove this since it might interfere */
+/* nav a:hover {
+    background-color: none;
+} */
