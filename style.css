@@ -59,23 +59,26 @@ nav a {
     width: 300px;
 }
 
-/* Container for the GIFs */
 .container {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between GIFs */
+    gap: 0px; /* Space between GIFs - set to 50px as requested */
 }
 
 /* General GIF styling */
 .welcome {
-    max-width: 50px; /* Adjust size as needed */
+    width: 500px; /* Fixed width */
     height: auto;
-    max-width: 100%; /* Ensures responsiveness */
+}
+
+.fairy {
+    width: 150px; /* Fixed width */
+    height: auto;
 }
 
 /* Left GIF specific styling */
 .fairy-left {
-    margin-right: 200px; /* Offset for the first GIF */
+    transform: translateX(-10px); /* Moves fairy left without affecting welcome GIF */
 }
 
 .anarcho-tree {
