@@ -59,6 +59,36 @@ nav a {
     width: 300px;
 }
 
+/* Container for the GIFs */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between GIFs */
+}
+
+/* General GIF styling */
+.welcome {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+    max-width: 100%; /* Ensures responsiveness */
+}
+
+/* Left GIF specific styling */
+.fairy-left {
+    margin-right: 200px; /* Offset for the first GIF */
+}
+
+.anarcho-tree {
+    height: 100px;
+    width: 100px;
+    position: fixed; /* This keeps it fixed while scrolling */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    max-width: 200px; /* Adjust size as needed */
+    height: auto;
+    z-index: 999; /* Ensures it stays on top of other content */
+}
+  
 nav {
     background-color: darkgreen;
     padding: 1rem;
